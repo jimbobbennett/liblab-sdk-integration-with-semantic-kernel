@@ -1,22 +1,22 @@
-﻿using DayCatFacts;
-using DayCatFacts.Plugins;
+﻿using static System.Console;
 
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
-using static System.Console;
+
+using DayCatFacts;
+using DayCatFacts.Plugins;
 
 // Load the API key and selected model from the appsettings.json file
 var appSettingsReader = new AppSettingsReader();
 var openAISettings = appSettingsReader.ReadSection<OpenAISettings>("OpenAI");
-var catFactAPISettings = appSettingsReader.ReadSection<CatFactAPISettings>("CatFacts");
 
 // Create the kernel builder with OpenAI chat completion
 var builder = Kernel.CreateBuilder().AddOpenAIChatCompletion(openAISettings.Model, openAISettings.Key);
 
 // Add plugins to the kernel
-builder.Plugins.AddFromType<DayPlugin>();
-builder.Plugins.AddFromObject(new CatFactPlugin(catFactAPISettings.Key));
+builder.Plugins.AddFromType<DateTimePlugin>();
+builder.Plugins.AddFromType<CatFactPlugin>();
 
 // Build the kernel
 Kernel kernel = builder.Build();

@@ -51,4 +51,50 @@ For example, the `GetCatFact` function in the `CatFactPlugin` class calls the Ca
 
 ## Configure the app
 
-To run this app you will need to configure your OpenAI API key.
+To run this app you will need to configure your OpenAI API key in the app settings.
+
+1. In the `src/DayCatFacts` folder, copy the `appsettings.json.example` file to `appsettings.json`.
+1. Open the `appsettings.json` file and replace `OpenAI/key` with your OpenAI API key.
+
+    ```json
+    {
+        "OpenAI": {
+            "Key": "", // Your OpenAI API key
+            "Model": "gpt-4"
+        }
+    }
+    ```
+
+1. The app uses GPT-4 by default. If you want to use another model, replace `OpenAI/model` with the model ID of the model you want to use.
+
+## Try the app out
+
+The app is a simple .NET console app that allows you to interact with the LLM. The project is configured to point to the generated SDKs, so assuming you have these generated you should be able to build and run the app.
+
+1. Navigate to the `src/DayCatFacts` folder in the terminal.
+1. Run `dotnet run` to build and run the app.
+1. Ask the AI a question. If your question involves the current date and time or a cat fact, the AI will call the appropriate plugin to get the information, and you will see this written to the console.
+
+    ```bash
+    $ dotnet run
+    I am an AI assistant who also knows the current day and time, and a load of cat facts!
+    User > Tell me a fact about cats
+    CatFactPlugin > Getting a cat fact from the Cat Facts API...
+    Assistant > Here is a fun fact: Approximately 1/3 of cat owners think their pets are able to read their minds.
+    User > What is the date
+    DayPlugin > Getting the date and time from the World Time API...
+    Assistant > The date is April 5, 2024.
+    User >     
+    ```
+
+    The LLM uses the history of the conversation, so you can ask questions based on previous responses. For example, you could ask `What is the date tomorrow?` and the LLM would know to call the World Time API to get the date for tomorrow.
+
+    ```bash
+    User > what is the date tomorrow
+    DayPlugin > Getting the date and time from the World Time API...
+    Assistant > Tomorrow's date will be April 6, 2024.
+    ```
+
+## Extend the app
+
+This is your opportunity to extend this app! Find APIs you are interested in, and use liblab to generate C# SDKs for them. Then integrate them into the app using Semantic Kernel plugins.

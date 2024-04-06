@@ -10,15 +10,15 @@ using Environment = WorldTime.Http.Environment;
 /// <summary>
 /// A Semantic Kernel plugin for retrieving current date and time information.
 /// </summary>
-public class DayPlugin
+public class DateTimePlugin
 {
     private readonly WorldTimeClient _client;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="DayPlugin"/> class.
+    /// Initializes a new instance of the <see cref="DateTimePlugin"/> class.
     /// This creates an SDK client to access the World Time API.
     /// </summary>
-    public DayPlugin()
+    public DateTimePlugin()
     {
         var config = new WorldTimeConfig { Environment = Environment.Default };
         _client = new WorldTimeClient(config);
@@ -32,7 +32,7 @@ public class DayPlugin
     [Description("Gets current date and time.")]
     public async Task<DateTime> GetDateandTime()
     {        
-        Console.WriteLine("Getting the date and time from the World Time API...");
+        Console.WriteLine("DayPlugin > Getting the date and time from the World Time API...");
 
         // Get the date and time based off the current IP address
         var response = await _client.Ip.GetIpAsync();
@@ -53,7 +53,7 @@ public class DayPlugin
 
     public async Task<TimeZoneInfo> GetTimeZone()
     {        
-        Console.WriteLine("Getting the time zone from the World Time API...");
+        Console.WriteLine("DayPlugin > Getting the time zone from the World Time API...");
 
         // Get the timezone based off the current IP address
         var response = await _client.Ip.GetIpAsync();

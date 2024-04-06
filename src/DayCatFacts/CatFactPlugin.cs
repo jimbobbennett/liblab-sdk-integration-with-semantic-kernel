@@ -15,13 +15,12 @@ public class CatFactPlugin
     private readonly CatFactsClient _client;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="CatFactPlugin"/> class with the specified API key.
-    /// This creates an SDK client to access the Cat Fact API using the provided API key.
+    /// Initializes a new instance of the <see cref="CatFactPlugin"/> class.
+    /// This creates an SDK client to access the Cat Fact API.
     /// </summary>
-    /// <param name="apiKey">The API key used for authentication with the Cat Facts service.</param>
-    public CatFactPlugin(string apiKey)
+    public CatFactPlugin()
     {
-        var config = new CatFactsConfig { Environment = Environment.Default, ApiKeyAuth = new ApiKeyAuthConfig(apiKey) };
+        var config = new CatFactsConfig { Environment = Environment.Default };
         _client = new CatFactsClient(config);
     }
 
@@ -33,7 +32,7 @@ public class CatFactPlugin
     [Description("Gets a cat fact.")]
     public async Task<string> GetCatFact()
     {
-        Console.WriteLine("Getting cat fact from the Cat Facts API...");
+        Console.WriteLine("CatFactPlugin > Getting a cat fact from the Cat Facts API...");
 
         var response = await _client.Facts.GetRandomFactAsync();
         return response.Fact;
