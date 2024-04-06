@@ -1,0 +1,9 @@
+{
+    "OpenAI": {
+      "Key": "",
+      "Model": "gpt-4"
+    },
+    "CatFacts": {
+        "Key": ""
+    }
+  }

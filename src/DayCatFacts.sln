@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayCatFacts", "DayCatFacts\DayCatFacts.csproj", "{2FD8B272-218C-427B-8F43-798E839A5DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldTime", "..\world-time-sdk\output\csharp\WorldTime\WorldTime.csproj", "{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFacts", "..\cat-facts-sdk\output\csharp\CatFacts\CatFacts.csproj", "{4F5EDD3F-CD77-4076-9E7A-B420622EED09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD8B272-218C-427B-8F43-798E839A5DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD8B272-218C-427B-8F43-798E839A5DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD8B272-218C-427B-8F43-798E839A5DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD8B272-218C-427B-8F43-798E839A5DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

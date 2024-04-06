@@ -1,0 +1,32 @@
+{
+  "sdkName": "WorldTime",
+  "specFilePath": "api.yaml",
+  "languages": [
+    "csharp"
+  ],
+  "languageOptions": {
+    "csharp": {
+      "packageId": "liblab.Examples.WorldTime",
+      "sdkVersion": "0.0.1",
+      "liblabVersion": "2"
+    }
+  },
+  // The API spec has some warnings that we can ignore
+  "validationsToIgnore": [
+    {
+      "code": "info-contact"
+    },
+    {
+      "code": "oas3-server-trailing-slash"
+    },
+    {
+      "code": "operation-description"
+    },
+    {
+      "code": "operation-operationId"
+    },
+    {
+      "code": "operation-tags"
+    }
+  ]
+}
