@@ -27,10 +27,10 @@ This demo integrates two APIs:
 To integrate the APIs into your LLM, you need to generate C# SDKs for them using liblab. To do this, follow these steps:
 
 1. Ensure you have the liblab CLI installed and you are logged in. If you are using the included devcontainer, this is already installed for you. If not, refer to the [liblab CLI installation instructions](https://developers.liblab.com/cli/cli-installation/).
-1. This repo includes liblab config files already set up to generate the SDKs for the World Time API and Cat Facts API.
-    1. From the terminal, navigate to the `cat-facts-sdk` folder in this repo.
+1. This repo includes liblab config files already set up to generate the SDKs for the World Time API and Cat Facts API. These are in the `sdks` folder.
+    1. From the terminal, navigate to the `sdks/cat-facts-sdk` folder in this repo.
     1. Run `liblab build` to generate the Cat Facts SDK. The generated SDK will be in the `cat-facts-sdk/output/csharp` folder.
-    1. From the terminal, navigate to the `world-time-sdk` folder in this repo.
+    1. From the terminal, navigate to the `sdks/world-time-sdk` folder in this repo.
     1. Run `liblab build` to generate the World Time SDK. The generated SDK will be in the `world-time-sdk/output/csharp` folder.
 
 ## Check out the integrations
