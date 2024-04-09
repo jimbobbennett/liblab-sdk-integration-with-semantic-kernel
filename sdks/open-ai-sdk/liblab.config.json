@@ -1,0 +1,31 @@
+{
+  "sdkName": "OpenAI",
+  "specFilePath": "https://raw.githubusercontent.com/openai/openai-openapi/master/openapi.yaml",
+  "languages": [
+    "csharp"
+  ],
+  "auth": [
+    "bearer"
+  ],
+  "languageOptions": {
+    "csharp": {
+      "packageId": "liblab.Examples.OpenAI",
+      "liblabVersion": "2",
+      "sdkVersion": "0.0.1"
+    }
+  },
+  "validationsToIgnore": [
+    {
+      "code": "oas3-valid-schema-example"
+    },
+    {
+      "code": "no-$ref-siblings"
+    },
+    {
+      "code": "operation-description"
+    },
+    {
+      "code": "oas3-unused-component"
+    }
+  ]
+}

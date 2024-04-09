@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\sdks\world-time-sdk\output\csharp\WorldTime\WorldTime.csproj" />
     <ProjectReference Include="..\..\sdks\cat-facts-sdk\output\csharp\CatFacts\CatFacts.csproj" />
+    <ProjectReference Include="..\..\sdks\open-ai-sdk\output\csharp\OpenAi\OpenAi.csproj" />
   </ItemGroup>
 
   <ItemGroup>

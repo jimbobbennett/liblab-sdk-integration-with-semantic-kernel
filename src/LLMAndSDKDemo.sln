@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldTime", "..\sdks\world-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFacts", "..\sdks\cat-facts-sdk\output\csharp\CatFacts\CatFacts.csproj", "{4F5EDD3F-CD77-4076-9E7A-B420622EED09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAi", "..\sdks\open-ai-sdk\output\csharp\OpenAi\OpenAi.csproj", "{45B9EECF-3758-49DC-BB27-205AD97BAF96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5EDD3F-CD77-4076-9E7A-B420622EED09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B9EECF-3758-49DC-BB27-205AD97BAF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B9EECF-3758-49DC-BB27-205AD97BAF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B9EECF-3758-49DC-BB27-205AD97BAF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B9EECF-3758-49DC-BB27-205AD97BAF96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

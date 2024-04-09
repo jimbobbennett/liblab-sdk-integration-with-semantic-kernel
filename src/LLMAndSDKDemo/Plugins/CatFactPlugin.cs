@@ -12,7 +12,7 @@ using Environment = CatFacts.Http.Environment;
 /// </summary>
 public class CatFactPlugin
 {
-    private readonly CatFactsClient _client;
+    private readonly CatFactsClient client;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CatFactPlugin"/> class.
@@ -21,7 +21,7 @@ public class CatFactPlugin
     public CatFactPlugin()
     {
         var config = new CatFactsConfig { Environment = Environment.Default };
-        _client = new CatFactsClient(config);
+        client = new CatFactsClient(config);
     }
 
     /// <summary>
@@ -34,7 +34,7 @@ public class CatFactPlugin
     {
         Console.WriteLine("CatFactPlugin > Getting a cat fact from the Cat Facts API...");
 
-        var response = await _client.Facts.GetRandomFactAsync();
+        var response = await client.Facts.GetRandomFactAsync();
         return response.Fact;
     }
 }

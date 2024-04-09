@@ -11,7 +11,12 @@ public class OpenAISettings
     public required string Key { get; set; }
 
     /// <summary>
-    /// Gets or sets the model for OpenAI.
+    /// Gets or sets the chat model for OpenAI.
     /// </summary>
-    public required string Model { get; set; }
+    public required string ChatModel { get; set; }
+
+    /// <summary>
+    /// Gets or sets the image model for OpenAI.
+    /// </summary>
+    public required string ImageModel { get; set; }
 }

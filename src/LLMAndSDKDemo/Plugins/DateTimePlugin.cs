@@ -12,7 +12,7 @@ using Environment = WorldTime.Http.Environment;
 /// </summary>
 public class DateTimePlugin
 {
-    private readonly WorldTimeClient _client;
+    private readonly WorldTimeClient client;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="DateTimePlugin"/> class.
@@ -21,7 +21,7 @@ public class DateTimePlugin
     public DateTimePlugin()
     {
         var config = new WorldTimeConfig { Environment = Environment.Default };
-        _client = new WorldTimeClient(config);
+        client = new WorldTimeClient(config);
     }
 
     /// <summary>
@@ -35,7 +35,7 @@ public class DateTimePlugin
         Console.WriteLine("DayPlugin > Getting the date and time from the World Time API...");
 
         // Get the date and time based off the current IP address
-        var response = await _client.Ip.GetIpAsync();
+        var response = await client.Ip.GetIpAsync();
 
         // Get the timezone
         var tzi = TimeZoneInfo.FindSystemTimeZoneById(response.Timezone);
@@ -56,7 +56,7 @@ public class DateTimePlugin
         Console.WriteLine("DayPlugin > Getting the time zone from the World Time API...");
 
         // Get the timezone based off the current IP address
-        var response = await _client.Ip.GetIpAsync();
+        var response = await client.Ip.GetIpAsync();
 
         // Convert the timezone to a TimeZoneInfo object
         return TimeZoneInfo.FindSystemTimeZoneById(response.Timezone);
