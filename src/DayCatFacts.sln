@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayCatFacts", "DayCatFacts\DayCatFacts.csproj", "{2FD8B272-218C-427B-8F43-798E839A5DBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldTime", "..\world-time-sdk\output\csharp\WorldTime\WorldTime.csproj", "{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldTime", "..\sdks\world-time-sdk\output\csharp\WorldTime\WorldTime.csproj", "{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFacts", "..\cat-facts-sdk\output\csharp\CatFacts\CatFacts.csproj", "{4F5EDD3F-CD77-4076-9E7A-B420622EED09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFacts", "..\sdks\cat-facts-sdk\output\csharp\CatFacts\CatFacts.csproj", "{4F5EDD3F-CD77-4076-9E7A-B420622EED09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
