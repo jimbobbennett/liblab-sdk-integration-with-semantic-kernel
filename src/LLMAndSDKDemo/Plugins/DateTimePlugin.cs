@@ -41,6 +41,8 @@ public class DateTimePlugin
         var tzi = TimeZoneInfo.FindSystemTimeZoneById(response.Timezone);
 
         // Return the date and time as local
+        Console.WriteLine("DayPlugin > Current date and time: " + DateTime.Parse(response.Datetime));
+
         return TimeZoneInfo.ConvertTime(DateTime.Parse(response.Datetime), tzi);
     }
 
@@ -59,6 +61,8 @@ public class DateTimePlugin
         var response = await client.Ip.GetIpAsync();
 
         // Convert the timezone to a TimeZoneInfo object
+        Console.WriteLine("DayPlugin > Current time zone: " + response.Timezone);
+        
         return TimeZoneInfo.FindSystemTimeZoneById(response.Timezone);
     }
 }

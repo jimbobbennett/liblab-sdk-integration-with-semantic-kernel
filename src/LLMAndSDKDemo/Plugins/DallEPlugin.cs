@@ -35,17 +35,17 @@ public class DallEPlugin
         [Description("The prompt to use to create an image")] string prompt
         )
     {
-        Console.WriteLine("DallEPlugin > Creating an image using the prompt: " + prompt);
-
-        var model = imageModel switch
-        {
-            "dall-e-2" => Model23.DallE2,
-            "dall-e-3" => Model23.DallE3,
-            _ => Model23.DallE3
-        };
-
         try
         {
+            Console.WriteLine("DallEPlugin > Creating an image using the prompt: " + prompt);
+
+            var model = imageModel switch
+            {
+                "dall-e-2" => Model23.DallE2,
+                "dall-e-3" => Model23.DallE3,
+                _ => Model23.DallE3
+            };
+            
             var createRequest = new CreateImageRequest(prompt)
             {
                 Model = model,
@@ -72,14 +72,19 @@ public class DallEPlugin
                 imagePaths.Add("images/" + fileName);
             }
 
+            string message;
+
             if (imagePaths.Count != 0)
             {
-                return "DallEPlugin > Images created: " + string.Join(", ", imagePaths);
+                message = "Images created: " + string.Join(", ", imagePaths);
             }
             else
             {
-                return "DallEPlugin > No images were created.";
+                message = "No images were created.";
             }
+
+            Console.WriteLine("DallEPlugin > " + message);
+            return message;
         }
         catch (Exception e)
         {

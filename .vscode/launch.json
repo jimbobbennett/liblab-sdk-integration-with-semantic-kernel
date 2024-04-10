@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C#: DayCatFacts Debug",
+            "name": "C#: LLMAndSDKDemo Debug",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/src/DayCatFacts/DayCatFacts.csproj"
+            "projectPath": "${workspaceFolder}/src/LLMAndSDKDemo/LLMAndSDKDemo.csproj"
         }
 
     ]

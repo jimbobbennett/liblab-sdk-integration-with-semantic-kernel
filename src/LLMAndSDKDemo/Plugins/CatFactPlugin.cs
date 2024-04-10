@@ -35,6 +35,9 @@ public class CatFactPlugin
         Console.WriteLine("CatFactPlugin > Getting a cat fact from the Cat Facts API...");
 
         var response = await client.Facts.GetRandomFactAsync();
+
+        Console.WriteLine("CatFactPlugin > Cat fact: " + response.Fact);
+
         return response.Fact;
     }
 }

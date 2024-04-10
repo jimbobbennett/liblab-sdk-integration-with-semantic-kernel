@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayCatFacts", "DayCatFacts\DayCatFacts.csproj", "{2FD8B272-218C-427B-8F43-798E839A5DBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLMAndSDKDemo", "LLMAndSDKDemo\LLMAndSDKDemo.csproj", "{2FD8B272-218C-427B-8F43-798E839A5DBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldTime", "..\sdks\world-time-sdk\output\csharp\WorldTime\WorldTime.csproj", "{5A2373E9-97D4-4E0B-BE44-1E1D7E80742F}"
 EndProject
