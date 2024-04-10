@@ -2,8 +2,8 @@
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 
-using DayCatFacts;
-using DayCatFacts.Plugins;
+using LLMAndSDKDemo;
+using LLMAndSDKDemo.Plugins;
 
 // Load the API key and selected model from the appsettings.json file
 var appSettingsReader = new AppSettingsReader();

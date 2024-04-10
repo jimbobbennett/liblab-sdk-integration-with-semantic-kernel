@@ -5,7 +5,7 @@ using OpenAi.Config;
 using OpenAi.Models;
 using static OpenAi.Models.CreateImageRequest;
 
-namespace DayCatFacts.Plugins;
+namespace LLMAndSDKDemo.Plugins;
 
 public class DallEPlugin
 {

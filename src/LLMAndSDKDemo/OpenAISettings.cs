@@ -1,4 +1,4 @@
-namespace  DayCatFacts;
+namespace  LLMAndSDKDemo;
 
 /// <summary>
 /// Represents the settings for OpenAI.

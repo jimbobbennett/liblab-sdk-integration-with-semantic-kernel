@@ -1,4 +1,4 @@
-namespace  DayCatFacts.Plugins;
+namespace  LLMAndSDKDemo.Plugins;
 
 using System.ComponentModel;
 

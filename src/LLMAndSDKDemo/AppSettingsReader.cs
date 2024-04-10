@@ -1,4 +1,4 @@
-namespace  DayCatFacts;
+namespace  LLMAndSDKDemo;
 
 using Microsoft.Extensions.Configuration;
 
